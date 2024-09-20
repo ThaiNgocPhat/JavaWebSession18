@@ -7,12 +7,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class BaiTap1Controller {
-    @GetMapping("/showConfig")
-    public String showConfig(Model model){
-        Mail mail = new Mail(1, "vi", 10, true, "This is my signature");
-        model.addAttribute("mail", mail);
-        return "showConfig";
-    }
 
     @GetMapping("/updateConfig")
     public String updateConfig(Model model){
